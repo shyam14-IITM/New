@@ -72,6 +72,12 @@ function check(idx){
 for(box of boxes)
 {
     box.addEventListener('click',function(){
+        if(started==false){
+        started=true;
+        console.log("Game Started");
+
+        levelUp();
+    }
         
         userSeq.push(this);
         flash(this);
