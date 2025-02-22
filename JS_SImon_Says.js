@@ -78,11 +78,13 @@ for(box of boxes)
 
         levelUp();
     }
+        else{
+            userSeq.push(this);
+            flash(this);
         
-        userSeq.push(this);
-        flash(this);
+            check(userSeq.length-1);
+        }
         
-        check(userSeq.length-1);
 
     })
 
